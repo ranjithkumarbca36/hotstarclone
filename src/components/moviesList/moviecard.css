@@ -1,0 +1,114 @@
+
+body{
+   scroll-behavior: smooth;
+}
+.movielist{
+display: flex;
+gap: 8;
+width: 1700px;
+overflow: hidden;
+overflow-x:auto ;
+margin-top: 20px;
+padding: 20px;
+scroll-behavior: smooth;
+
+
+
+}
+.movielist::-webkit-scrollbar{
+    display:none
+}
+.movielist img {
+    height: 300px;
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+.movielist img:hover{
+    scale: 1.15; 
+    border: 3px solid gainsboro;   
+}
+
+.movietext{
+    color: whitesmoke;
+    
+}
+
+.movielist{
+    padding: 10px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    transition: all 300ms ease-in-out;
+}
+
+.movietext h4{
+
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-bottom:-10px;
+}
+
+
+/* Length card */
+
+.movielist1{
+    display: flex;
+    width: 1600px;
+    overflow: hidden;
+    overflow-x:auto ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+    position: relative;
+    
+}
+.movielist1::-webkit-scrollbar{
+    display:none
+}
+
+
+.movielist1 .lengthcard img {
+    height: 250px;
+    width: 500px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+
+}
+
+.movielist1 img:hover{
+   scale: 1.1;
+    border: 3px solid gainsboro; 
+    margin-left: 20px;
+    transition: all 300ms ease-in-out;  
+}
+.lengthcard .tit{
+    width: 500px;
+    max-height: 250px;
+    position: absolute;
+    bottom: 80px;
+    margin-left: 30px;
+    transform: translateY(50%);
+    /* transition: transform 1000ms ease-in;  */
+    visibility: hidden;
+  
+}
+
+ .lengthcard:hover .tit{
+
+    transform: translateY(0);
+    width: 500px;
+    transition: all ease-in 1s; 
+    visibility: visible;
+    /* color:inherit; */
+    color: invert;
+    
+}
+
